@@ -1,6 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'SF Pro';
-  }
+body{
+  font-family: 'SF Pro';
+  position: relative;
+
+}
+
+.login {
+  position: absolute;
+  width: 230px;
+  height: 52px;
+  left: 516px;
+  top: 600px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: black;
+}
+
+.register{
+  position: absolute;
+  width: 230px;
+  height: 52px;
+  left: 750px;
+  top: 600px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: black;
+}
+
+.pontilaunch{
+  
+position: absolute;
+width: 740px;
+height: 156.18px;
+left: 350px;
+top: 150px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 153px;
+text-align: center;
+
+color: #F56262;
+}
+
+.pontilaunch1{
+  position: absolute;
+width: 740px;
+height: 156.18px;
+left: 340px;
+top: 150px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 153px;
+text-align: center;
+
+color: #FFD480;
+}
