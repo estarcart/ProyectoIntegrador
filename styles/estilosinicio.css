@@ -1,7 +1,6 @@
 body{
   font-family: 'SF Pro';
   position: relative;
-
 }
 
 .login {
@@ -16,6 +15,7 @@ body{
   line-height: 43px;
   text-align: center;
   color: black;
+  text-decoration: none;
 }
 
 .register{
@@ -37,16 +37,14 @@ body{
 position: absolute;
 width: 740px;
 height: 156.18px;
-left: 350px;
+left: 380px;
 top: 150px;
 
-font-family: 'SF Pro';
 font-style: normal;
 font-weight: 700;
 font-size: 70px;
 line-height: 153px;
 text-align: center;
-
 color: #F56262;
 }
 
@@ -54,10 +52,10 @@ color: #F56262;
   position: absolute;
 width: 740px;
 height: 156.18px;
-left: 340px;
+left: 370px;
 top: 150px;
 
-font-family: 'SF Pro';
+
 font-style: normal;
 font-weight: 700;
 font-size: 70px;
@@ -65,4 +63,17 @@ line-height: 153px;
 text-align: center;
 
 color: #FFD480;
+}
+
+.descripcion{
+  position: absolute;
+width: 740px;
+height: 156.18px;
+left: 370px;
+top: 325px;
+font-style: normal;
+font-weight: 200;
+font-size: 25px;
+line-height: 153px;
+text-align: center;
 }
