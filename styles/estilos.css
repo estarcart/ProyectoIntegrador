@@ -1,16 +1,13 @@
-/*CARACTERISTICAS DEL BODY DE TODAS LAS PAGINAS*/
 body{
   font-family: 'SF Pro';
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  position: absolute;
 }
 /*ELEMENTOS DE PAGINA INICIO*/
 .login { /*boton inicio de sesion*/
   position: absolute;
   width: 230px;
   height: 52px;
-  left: 620px;
+  left: 516px;
   top: 600px;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +22,7 @@ body{
   position: absolute;
   width: 230px;
   height: 52px;
-  left: 770px;
+  left: 750px;
   top: 600px;
   font-style: normal;
   font-weight: 400;
@@ -34,26 +31,12 @@ body{
   text-align: center;
   color: black;
 }
-.ingresar { /*boton inicio de sesion*/
-  position: absolute;
-  width: 300px;
-  height: 52px;
-  left: 553px;
-  top: 600px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 43px;
-  text-align: left;
-  color: black;
-  text-decoration: none;
-}
 
 .pontilaunch{ /*titulo de la pagina*/
   
 position: absolute;
-width: 200px;
-height: 200px;
+width: 740px;
+height: 156.18px;
 left: 380px;
 top: 150px;
 
@@ -67,8 +50,8 @@ color: #F56262;
 
 .pontilaunch1{ /*titulo 2 de la pagina*/
   position: absolute;
-width: 200px;
-height: 200px;
+width: 740px;
+height: 156.18px;
 left: 370px;
 top: 150px;
 
@@ -93,39 +76,156 @@ font-weight: 200;
 font-size: 25px;
 line-height: 153px;
 text-align: center;
-color: #F94F00;
 }
-
-/*ELEMENTOS DE LA PAGINA LOGIN*/
-form{
+/* HEAD */
+.head{
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.form p{
-  position: absolute;
-width: 400x;
-height: 43px;
-left: 50%;
-top: 25%;
-transform: translate(-50%, -50%);
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-text-align: center;
-color: #000000;
-
+  height: 90px;
+  background: #faf8f8;
+  position:fixed;
+  left: 0%;
+  top: 0%;
 }
 
-.ust{
-  top: 100%;
-}
+/* PONTILAUNCH */
 
-.pass{
+.pontilaunchHome{ /*titulo de la pagina arriba a la derecha */
+  position: fixed;
+  left: 44px;
+
+  font-style: normal;
+  font-size: 25px;
+  line-height: 17px;
+  text-align: center;
+  color: #F56262;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  }
   
+  .pontilaunch1Home{ /*titulo 2 de la pagina arriba a la derecha*/
+
+    position: fixed;
+    left: 40px;
+
+    font-style: normal;
+    font-size: 25px;
+    line-height: 17px;
+    text-align: center;  
+  color: #FFD480;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  }
+
+/* BUSCADOR */
+
+.box{ /*caja de buscador */
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translate(-5%, -50%);
+}
+input.src{ /*posicion color, borde,  icono */
+  padding: 5px 5px 5px 8px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #444;
+  border: 3px solid #FFD480;
+  background: #fff url("../imagenes/search-icon.png")
+    no-repeat 9px center;
+  width: 250px;
+  transition: all .5s;
+}
+input.src:hover{ /*animacio y cambio de color */
+  width: 270px;
+  background-color: #fff;
+  border-color: #F56262;
+  box-shadow: 0 0 5px #6dcff680;
+}
+/* ICONOS */
+.casa img{ /*icono del home arriba a la izquierda*/
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  left: 78%;
+}
+.comentario img{ /*icono de comentario arriba a la izquierda*/
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  left: 83%;
+}
+.salir img{ /*icono de cerrar sesion arriba a la izquierda*/
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  left: 88%;
+}
+.usuarioIcon{ /* icono usuario parte izquierda  */
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 22%;
+  left: 75%;
+}
+.proyectIcon{ /* icono proyecto parte izquierda */
+  position: fixed;
+  width: px;
+  height: 1px;
+  top: 43%;
+  left: 75%;
+}
+
+/* Rectangulos en la parte izquierda */
+
+.rectanguloUser { /* Rectangulo amarillo */ 
+
+  width: 285px;
+  height: 120px;
+  background: #FFD480;
+  position:fixed;
+  left: 73%;
+  top: 18%;
+  border-radius: 10%;
+}
+.rectanguloProyect { /* Rectangulo rojo */
+
+  width: 285px;
+  height: 75px;
+  background: #F56262;
+  position:fixed;
+  left: 73%;
+  top: 40%;
+  border-radius: 7%;
+}
+
+/* Texto para el home home */
+
+.usuarioText h1{ /* texto usuario en rectangulo amarillo */
+  position: fixed;
+  left: 81%;
+  top:22%;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 17px;
+  text-align: center;  
+  color: #070707;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.proyecText h1{ /* texto proyecto en rectangulo rojo */
+  position: fixed;
+  left: 79%;
+  top:43%;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 10px;
+  text-align: center;  
+  color: #070707;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
