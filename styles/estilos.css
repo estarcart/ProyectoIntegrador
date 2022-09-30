@@ -2,8 +2,8 @@ body{
   font-family: 'SF Pro';
   position: absolute;
 }
-
-.login {
+/*ELEMENTOS DE PAGINA INICIO*/
+.login { /*boton inicio de sesion*/
   position: absolute;
   width: 230px;
   height: 52px;
@@ -18,7 +18,7 @@ body{
   text-decoration: none;
 }
 
-.register{
+.register{ /*boton registro*/
   position: absolute;
   width: 230px;
   height: 52px;
@@ -32,7 +32,7 @@ body{
   color: black;
 }
 
-.pontilaunch{
+.pontilaunch{ /*titulo de la pagina*/
   
 position: absolute;
 width: 740px;
@@ -48,7 +48,7 @@ text-align: center;
 color: #F56262;
 }
 
-.pontilaunch1{
+.pontilaunch1{ /*titulo 2 de la pagina*/
   position: absolute;
 width: 740px;
 height: 156.18px;
@@ -65,7 +65,7 @@ text-align: center;
 color: #FFD480;
 }
 
-.descripcion{
+.descripcion{ /*descripcion bajo el titulo*/
   position: absolute;
 width: 740px;
 height: 156.18px;
