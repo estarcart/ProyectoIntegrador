@@ -7,7 +7,7 @@ body{
   position: absolute;
   width: 230px;
   height: 52px;
-  left: 516px;
+  left: 620px;
   top: 600px;
   font-style: normal;
   font-weight: 400;
@@ -22,7 +22,7 @@ body{
   position: absolute;
   width: 230px;
   height: 52px;
-  left: 750px;
+  left: 770px;
   top: 600px;
   font-style: normal;
   font-weight: 400;
@@ -30,6 +30,20 @@ body{
   line-height: 43px;
   text-align: center;
   color: black;
+}
+.ingresar { /*boton inicio de sesion*/
+  position: absolute;
+  width: 300px;
+  height: 52px;
+  left: 553px;
+  top: 600px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
 }
 
 .pontilaunch{ /*titulo de la pagina*/
@@ -76,4 +90,5 @@ font-weight: 200;
 font-size: 25px;
 line-height: 153px;
 text-align: center;
+color: #F94F00;
 }
