@@ -1,8 +1,9 @@
+/*CARACTERISTICAS DEL BODY DE TODAS LAS PAGINAS*/
 body{
- 
-  
   font-family: 'SF Pro';
-  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 /*ELEMENTOS DE PAGINA INICIO*/
 .login { /*boton inicio de sesion*/
@@ -93,4 +94,38 @@ font-size: 25px;
 line-height: 153px;
 text-align: center;
 color: #F94F00;
+}
+
+/*ELEMENTOS DE LA PAGINA LOGIN*/
+form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form p{
+  position: absolute;
+width: 400x;
+height: 43px;
+left: 50%;
+top: 25%;
+transform: translate(-50%, -50%);
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 43px;
+text-align: center;
+color: #000000;
+
+}
+
+.ust{
+  top: 100%;
+}
+
+.pass{
+  
 }

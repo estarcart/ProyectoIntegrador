@@ -14,19 +14,24 @@
     </style> <!--codigo para quitar delineado y color azul a las palabras que llevan link-->
 </head>
 <body>
-    <div class="inicia">
-        <p>inicia sesión en pontilaunch</p>
-    </div>
-    <div class="inicio">
-        <form>
-            
-            <input type="correo" placeholder="correo electronico"> <!--cuadro para escribir el correo electronico-->
+    <div class="form">
+        <p>inicia sesion en pontilaunch</p>
+        <form method="post">
+            <div class="ust">
+                <input type="user" required placeholder="correo electronico">
+            </div>
+            <div class="pass">
+                <input type="passw" required placeholder="contraseña">
+            </div>
+            <input type="submit" value="iniciar sesión">
 
-            <input type="password" placeholder="contraseña"> <!--cuadro para escribir la contrasena-->
 
-            <input type="submit" value="iniciar sesión"> <!--al darle click inicia sesion-->
-            
+
+
+
         </form>
+
+
     </div>
     
 </body>
