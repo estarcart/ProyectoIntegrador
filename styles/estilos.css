@@ -1,4 +1,6 @@
 body{
+ 
+  
   font-family: 'SF Pro';
   position: absolute;
 }
@@ -49,8 +51,8 @@ body{
 .pontilaunch{ /*titulo de la pagina*/
   
 position: absolute;
-width: 740px;
-height: 156.18px;
+width: 200px;
+height: 200px;
 left: 380px;
 top: 150px;
 
@@ -64,8 +66,8 @@ color: #F56262;
 
 .pontilaunch1{ /*titulo 2 de la pagina*/
   position: absolute;
-width: 740px;
-height: 156.18px;
+width: 200px;
+height: 200px;
 left: 370px;
 top: 150px;
 
