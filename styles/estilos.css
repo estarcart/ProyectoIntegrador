@@ -101,6 +101,50 @@ text-align: center;
   top: 0%;
 }
 
+/*INICIO DE SESIÓN*/
+
+.lg{ /*posicion color, borde,  icono */
+  padding: 5px 5px 5px 8px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  width: 250px;
+  transition: all .5s;
+}
+
+.sub{
+  width: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PONTILAUNCH */
 
 .pontilaunchHome{ /*titulo de la pagina arriba a la derecha */
