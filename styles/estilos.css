@@ -3,11 +3,25 @@ body{
   position: absolute;
 }
 /*ELEMENTOS DE PAGINA INICIO*/
+.ingresar{
+  position: absolute;
+  width: 230px;
+  height: 52px;
+  left: 483px;
+  top: 600px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
 .login { /*boton inicio de sesion*/
   position: absolute;
   width: 230px;
   height: 52px;
-  left: 516px;
+  left: 620px;
   top: 600px;
   font-style: normal;
   font-weight: 400;
@@ -22,7 +36,7 @@ body{
   position: absolute;
   width: 230px;
   height: 52px;
-  left: 750px;
+  left: 770px;
   top: 600px;
   font-style: normal;
   font-weight: 400;
