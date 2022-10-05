@@ -258,29 +258,17 @@ text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PONTILAUNCH */
-
+.selecc{
+  width: 30px;
+  height: 5px;
+  background: #F56262;
+  position:fixed;
+  left: 75%;
+  top: 9.5%;
+  border-radius: 1vh;
+  z-index: 1;
+}
 .pontilaunchHome{ /*titulo de la pagina arriba a la derecha */
   position: fixed;
   left: 44px;
@@ -290,8 +278,7 @@ text-align: center;
   line-height: 17px;
   text-align: center;
   color: #F56262;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+ 
   }
   
   .pontilaunch1Home{ /*titulo 2 de la pagina arriba a la derecha*/
@@ -304,57 +291,29 @@ text-align: center;
     line-height: 17px;
     text-align: center;  
   color: #FFD480;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
   }
 
-/* BUSCADOR */
-
-.box{ /*caja de buscador */
-  position: fixed;
-  top: 8%;
-  left: 50%;
-  transform: translate(-5%, -50%);
-}
-input.src{ /*posicion color, borde,  icono */
-  padding: 5px 5px 5px 8px;
-  outline: none;
-  font-size: 18px;
-  border-radius: 15px;
-  color: #444;
-  border: 3px solid #FFD480;
-  background: #fff url("../imagenes/search-icon.png")
-    no-repeat 9px center;
-  width: 250px;
-  transition: all .5s;
-}
-input.src:hover{ /*animacio y cambio de color */
-  width: 270px;
-  background-color: #fff;
-  border-color: #F56262;
-  box-shadow: 0 0 5px #6dcff680;
-}
 /* ICONOS */
 .casa img{ /*icono del home arriba a la izquierda*/
   position: fixed;
   width: 30px;
   height: 30px;
   top: 5%;
-  left: 78%;
+  left: 75%;
 }
 .comentario img{ /*icono de comentario arriba a la izquierda*/
   position: fixed;
   width: 30px;
   height: 30px;
   top: 5%;
-  left: 83%;
+  left: 80%;
 }
 .salir img{ /*icono de cerrar sesion arriba a la izquierda*/
   position: fixed;
   width: 30px;
   height: 30px;
   top: 5%;
-  left: 88%;
+  left: 85%;
 }
 .usuarioIcon{ /* icono usuario parte izquierda  */
   position: fixed;
@@ -381,7 +340,7 @@ input.src:hover{ /*animacio y cambio de color */
   position:fixed;
   left: 73%;
   top: 18%;
-  border-radius: 10%;
+  border-radius: 3vh;
 }
 .rectanguloProyect { /* Rectangulo rojo */
 
@@ -391,7 +350,7 @@ input.src:hover{ /*animacio y cambio de color */
   position:fixed;
   left: 73%;
   top: 40%;
-  border-radius: 7%;
+  border-radius: 3vh;
 }
 
 /* Texto para el home home */
@@ -421,3 +380,5 @@ input.src:hover{ /*animacio y cambio de color */
   font-family: 'Roboto', sans-serif;
 
 }
+
+
