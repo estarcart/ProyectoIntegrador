@@ -272,20 +272,16 @@ text-align: center;
 .pontilaunchHome{ /*titulo de la pagina arriba a la derecha */
   position: fixed;
   left: 44px;
-
   font-style: normal;
   font-size: 25px;
   line-height: 17px;
   text-align: center;
   color: #F56262;
- 
   }
   
   .pontilaunch1Home{ /*titulo 2 de la pagina arriba a la derecha*/
-
     position: fixed;
     left: 40px;
-
     font-style: normal;
     font-size: 25px;
     line-height: 17px;
@@ -364,8 +360,8 @@ text-align: center;
   line-height: 17px;
   text-align: center;  
   color: #070707;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
 }
 .proyecText h1{ /* texto proyecto en rectangulo rojo */
   position: fixed;
@@ -376,9 +372,42 @@ text-align: center;
   line-height: 10px;
   text-align: center;  
   color: #070707;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 
 }
 
+/*VISTA COORDINADOR*/
 
+.usuarioText1 h1{
+  position: fixed;
+  left: 80%;
+  top:22%;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 17px;
+  text-align: center;  
+  color: #070707;
+  font-weight: 400;
+}
+
+.rectanguloGest{
+  width: 285px;
+  height: 75px;
+  background: #F56262;
+  position:fixed;
+  left: 73%;
+  top: 52%;
+  border-radius: 3vh;
+}
+
+.proyectGest h1{
+  position: fixed;
+  left: 79%;
+  top:55%;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 10px;
+  text-align: center;  
+  color: #070707;
+  font-weight: 400;
+}
