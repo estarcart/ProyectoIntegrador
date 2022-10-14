@@ -129,7 +129,7 @@ text-align: center;
   background-color: #D9D9D9;
   height: 35px;
   width: 100spx;
-  transition: all .5s;
+  
 }
 
 .lg1{ 
@@ -145,7 +145,7 @@ text-align: center;
   background-color: #D9D9D9;
   height: 35px;
   width: 220px;
-  transition: all .5s;
+  
 }
 
 .sub{
@@ -157,6 +157,22 @@ text-align: center;
 }
 
 /*REGISTRARSE*/
+
+.estudre{
+  position: absolute;
+  top: 160px;
+  left: 840px;
+  width: 100px;
+  align-items: center;
+}
+
+.usuareg{
+  position: absolute;
+  top: 160px;
+  left: 725px;
+  width: 100px;
+  align-items: center;
+}
 
 .lg2{
   padding: 5px 5px 5px 8px;
@@ -171,22 +187,7 @@ text-align: center;
   background-color: #D9D9D9;
   height: 35px;
   width: 100spx;
-  transition: all .5s;
-}
-.lg3{
-  padding: 5px 5px 5px 8px;
-  position: absolute;
-  top: 300px;
-  left: 700px;
-  outline: none;
-  font-size: 18px;
-  border-radius: 11px;
-  color: black;
-  border: 0px solid #D9D9D9 ;
-  background-color: #D9D9D9;
-  height: 35px;
-  width: 100spx;
-  transition: all .5s;
+  
 }
 .lg3{
   padding: 5px 5px 5px 8px;
@@ -201,12 +202,27 @@ text-align: center;
   background-color: #D9D9D9;
   height: 35px;
   width: 100spx;
-  transition: all .5s;
+  
+}
+.lg3{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 390px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 100spx;
+  
 }
 .lg4{
   padding: 5px 5px 5px 8px;
   position: absolute;
-  top: 400px;
+  top: 450px;
   left: 700px;
   outline: none;
   font-size: 18px;
@@ -216,12 +232,12 @@ text-align: center;
   background-color: #D9D9D9;
   width: 100spx;
   height: 35px;
-  transition: all .5s;
+  
 }
 .lg5{
   padding: 5px 5px 5px 8px;
   position: absolute;
-  top: 300px;
+  top: 330px;
   left: 700px;
   outline: none;
   font-size: 18px;
@@ -230,21 +246,46 @@ text-align: center;
   border: 0px solid #D9D9D9 ;
   background-color: #D9D9D9;
   height: 35px;
-  width: 100spx;
-  transition: all .5s;
+  width: 220px;
+  
 }
+
+.lg6{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 260px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 220px;
+  
+}
+
 
 .registro{
   position: absolute;
-  top: 140px;
-  left: 725px;
+  top: 110px;
+  left: 715px;
+  width: 200px;
+  align-items: center;
+}
+
+.fech{
+  position: absolute;
+  top: 293px;
+  left: 703px;
   width: 200px;
   align-items: center;
 }
 
 .registrarse{
   position: absolute;
-  top: 570px;
+  top: 510px;
   left: 770px;
   width: 200px;
   align-items: center;
@@ -253,7 +294,7 @@ text-align: center;
 .volver1{
   width: 300px;
   position: absolute;
-  top: 570px;
+  top: 510px;
   left: 700px;
 }
 
