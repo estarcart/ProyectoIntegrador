@@ -283,19 +283,56 @@ text-align: center;
   align-items: center;
 }
 
-.registrarse{
-  position: absolute;
-  top: 510px;
-  left: 770px;
-  width: 200px;
-  align-items: center;
+.reguser{
+  width: 55px;
+  height: 5px;
+  background: #F56262;
+  position:fixed;
+  left: 47.5%;
+  top: 25%;
+  border-radius: 1vh;
+  z-index: 1;
 }
 
-.volver1{
-  width: 300px;
+.regestud{
+  width: 74px;
+  height: 5px;
+  background: #F56262;
+  position:fixed;
+  left: 55.1%;
+  top: 25%;
+  border-radius: 1vh;
+  z-index: 1;
+}
+
+.registrarse{
   position: absolute;
-  top: 510px;
+  top: 505px;
+  left: 855px;
+  height: 30px;
+  width: 80px;
+  align-items: center;
+  border: 0ch;
+  border-radius: 11px;
+  background-color: #FFFE9F;
+  font-family: 'SF Pro';
+  font-size: 16px;
+}
+
+
+.volver1{
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  top: 505px;
   left: 700px;
+  border: 0ch;
+  text-align: center;
+  line-height: 29px;
+  border-radius: 11px;
+  margin: 0px auto;
+  background-color: #FCA180;
+  
 }
 
 
