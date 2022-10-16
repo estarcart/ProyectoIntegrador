@@ -38,7 +38,7 @@
     <div class="registra">
         <form method="post">
             
-            <input type="text" required placeholder="correo electronico" class="lg2" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
+            <input type="email" required placeholder="correo electronico" class="lg2" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
             
             <input type="radio" required class="terminos">
             
@@ -54,6 +54,11 @@
         
         </form>
     </div>
+    
+    <?php
+    include("conexi.php"):
+    ?>
+
     
 </body>
 </html>
