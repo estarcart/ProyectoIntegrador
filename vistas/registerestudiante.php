@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicia sesión - pontilaunch</title>
-    <link rel="stylesheet" href="/styles/estilos.css"> <!--se conecta el html con el css-->
+    <link rel="stylesheet" href="../styles/estilos.css"> <!--se conecta el html con el css-->
     <style type="text/css">
         a{
             color: black;
@@ -16,7 +16,7 @@
 <body>
     <div class="regestud"></div>
     <div class="volver1">
-        <a href="/vistas/inicio.html">regresar</a>
+        <a href="../vistas/inicio.php">regresar</a>
     </div>
     <div class="registro">
         <p>registrate en pontilaunch como:</p>
@@ -25,7 +25,7 @@
         <p>fecha de nacimiento:</p>
     </div>
     <div class="estudre">
-        <a href="/vistas/registerestudiante.html">estudiante</a>
+        <a href="../vistas/registerestudiante.php">estudiante</a>
     </div>
 
     <div class="terminos2">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="usuareg">
-        <a href="/vistas/register.html">usuario</a>
+        <a href="../vistas/register.php">usuario</a>
     </div>
     <div class="registra">
         <form>
@@ -56,11 +56,15 @@
 
             <input type="text" required placeholder="promedio" class="elg10" name="promedio" autocomplete = " off " >
     
-            <input type="submit" class="Eregistrarse" name="registrarse" value="registrarse" > <!--al darle click lo registra en el sistema-->
+            <input type="submit" class="Eregistrarse" name="Eregistrarse" value="registrarse" > <!--al darle click lo registra en el sistema-->
             
             <input type="checkbox" required class="terminos">
         </form>
     </div>
-    
+
+    <?php
+    include('../conexiones/registromiembro.php');
+    ?>
+ 
 </body>
 </html>

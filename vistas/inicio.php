@@ -24,10 +24,10 @@
         <a href="/vistas/home_invitado.html">ingresar</a> <!--al darle click lo manda al home-->
     </div>
     <div class="login">
-        <a href="/vistas/login.html">- iniciar sesión -</a> <!--al darle click lo manda a iniciar sesion-->
+        <a href="../vistas/login.php">- iniciar sesión -</a> <!--al darle click lo manda a iniciar sesion-->
     </div>
     <div class="register">
-        <a href="/vistas/register.html">registrarse</a> <!--al darle click lo manda a registrarse-->
+        <a href="../vistas/register.php">registrarse</a> <!--al darle click lo manda a registrarse-->
     </div>
     <div class="descripcion">
         <p>pública - califica - negocia</p>

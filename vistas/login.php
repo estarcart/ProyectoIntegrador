@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicia sesión - pontilaunch</title>
-    <link rel="stylesheet" href="/styles/estilos.css">  <!--se conecta el html con el css-->
+    <link rel="stylesheet" href="../styles/estilos.css">  <!--se conecta el html con el css-->
     <style type="text/css"> 
         a{
             color: black;
@@ -15,13 +15,13 @@
 </head>
 <body>
     <div class="volver">
-        <a href="/vistas/inicio.html">regresar</a>
+        <a href="../vistas/inicio.php">regresar</a>
     </div>
     <div class="inicio">
         <p>inicia sesion en pontilaunch</p>
         <form method="post">
-            <input type="user" required placeholder="correo electronico" class = "lg" autocomplete = " off ">
-            <input type="passw" required placeholder="contraseña" class = "lg1" autocomplete = " off "> 
+            <input type="user" required placeholder="correo electronico" class = "lg" autocomplete = " off " name="user">
+            <input type="passw" required placeholder="contraseña" class = "lg1" autocomplete = " off " name="passw"> 
             <input type="submit" value="ingresar" class="sub">
         </form>
 

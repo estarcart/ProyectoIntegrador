@@ -16,7 +16,7 @@
 <body>
     <div class="reguser"></div>
     <div class="volver1">
-        <a href="/vistas/inicio.html">regresar</a>
+        <a href="../vistas/inicio.php">regresar</a>
     </div>
     <div class="registro">
         <p>registrate en pontilaunch como:</p>
@@ -25,10 +25,10 @@
         <p>fecha de nacimiento:</p>
     </div>
     <div class="estudre">
-        <a href="/vistas/registerestudiante.html">estudiante</a>
+        <a href="../vistas/registerestudiante.php">estudiante</a>
     </div>
     <div class="usuareg">
-        <a href="/vistas/register.html">usuario</a>
+        <a href="../vistas/register.php">usuario</a>
     </div>
 
     <div class="terminos1">
@@ -56,7 +56,7 @@
     </div>
     
     <?php
-    include('../conexiones/conexi.php');
+    include('../conexiones/registrouser.php');
     ?>
 
     
