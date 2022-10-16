@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicia sesión - pontilaunch</title>
-    <link rel="stylesheet" href="/styles/estilos.css"> <!--se conecta el html con el css-->
+    <link rel="stylesheet" href="../styles/estilos.css"> <!--se conecta el html con el css-->
     <style type="text/css">
         a{
             color: black;
@@ -38,25 +38,25 @@
     <div class="registra">
         <form method="post">
             
-            <input type="email" required placeholder="correo electronico" class="lg2" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
+            <input type="email" required placeholder="correo electronico" class="lg2" name="email" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
             
-            <input type="radio" required class="terminos">
+            <input type="checkbox" required class="terminos">
             
-            <input type="text" required placeholder="nombres" class="lg3" autocomplete = " off " > <!--cuadro para escribir el nombre-->
+            <input type="text" required placeholder="nombres" class="lg3" name="nombre" autocomplete = " off " > <!--cuadro para escribir el nombre-->
                
-            <input type="text" required placeholder="apellidos" class="lg4" autocomplete = " off " > <!--cuadro para escribir apellidos-->
+            <input type="text" required placeholder="apellidos" class="lg4" name="apellido" autocomplete = " off " > <!--cuadro para escribir apellidos-->
                
-            <input type="date" required placeholder="fecha de nacimiento" class="lg5" autocomplete = " off " > <!--cuadro para escribir la fecha de nacimiento-->
+            <input type="date" required placeholder="fecha de nacimiento" class="lg5" name="fecha" autocomplete = " off " > <!--cuadro para escribir la fecha de nacimiento-->
      
-            <input type="password" required placeholder="contraseña" class="lg6" autocomplete = " off " > <!--cuadro para escribir la fecha de nacimiento-->
+            <input type="password" required placeholder="contraseña" class="lg6" name="contrasena" autocomplete = " off " > <!--cuadro para escribir la fecha de nacimiento-->
     
-            <input type="submit" class="registrarse" value="registrarse" > <!--al darle click lo registra en el sistema-->
+            <input type="submit" class="registrarse" name="registrarse" value="registrarse" > <!--al darle click lo registra en el sistema-->
         
         </form>
     </div>
     
     <?php
-    include("conexi.php"):
+    include('../conexiones/conexi.php');
     ?>
 
     

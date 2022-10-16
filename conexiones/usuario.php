@@ -1,3 +1,3 @@
 <?php
-    $conexion = mysqli_connect("localhost","root", "pontilaunch");
+    $conex = mysqli_connect("localhost","root","","pontilaunch");
 ?>
