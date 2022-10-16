@@ -426,16 +426,7 @@ text-align: center;
   top: 40%;
   border-radius: 3vh;
 }
-.rectanguloadmuser { /* Rectangulo gris */
 
-  width: 285px;
-  height: 75px;
-  background: #D9D9D9;
-  position:fixed;
-  left: 73%;
-  top: 64%;
-  border-radius: 3vh;
-}
 /* Texto para el home home */
 
 .usuarioText h1{ /* texto usuario en rectangulo amarillo */
@@ -483,14 +474,25 @@ text-align: center;
   background: #F56262;
   position:fixed;
   left: 73%;
-  top: 52%;
+  top: 36%;
+  border-radius: 3vh;
+}
+
+.rectanguloadmuser { /* Rectangulo gris */
+
+  width: 285px;
+  height: 75px;
+  background: #D9D9D9;
+  position:fixed;
+  left: 73%;
+  top: 48%;
   border-radius: 3vh;
 }
 
 .proyectGest h1{
   position: fixed;
   left: 79%;
-  top:55%;
+  top:39%;
   font-style: normal;
   font-size: 15px;
   line-height: 10px;
@@ -502,7 +504,7 @@ text-align: center;
 .adminuser h1{
   position: fixed;
   left: 79%;
-  top:67%;
+  top:51%;
   font-style: normal;
   font-size: 15px;
   line-height: 10px;
@@ -511,11 +513,11 @@ text-align: center;
   font-weight: 400;
 }
 
-.admfoto img{ /*icono de cerrar sesion arriba a la izquierda*/
+.admfoto img{ /*icono de gestion de iniciativas*/
   position: fixed;
   width: 40px;
   height: 40px;
-  top: 54%;
+  top: 38.3%;
   left: 74.7%;
 }
 
@@ -523,6 +525,6 @@ text-align: center;
   position: fixed;
   width: 40px;
   height: 40px;
-  top: 66.4%;
+  top: 50.5%;
   left: 74.7%;
 }
