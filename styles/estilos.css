@@ -156,7 +156,7 @@ text-align: center;
 
 }
 
-/*REGISTRARSE*/
+/*REGISTRARSE USUARIO NORMAL*/
 
 .estudre{
   position: absolute;
@@ -189,21 +189,7 @@ text-align: center;
   width: 100spx;
   
 }
-.lg3{
-  padding: 5px 5px 5px 8px;
-  position: absolute;
-  top: 500px;
-  left: 700px;
-  outline: none;
-  font-size: 18px;
-  border-radius: 11px;
-  color: black;
-  border: 0px solid #D9D9D9 ;
-  background-color: #D9D9D9;
-  height: 35px;
-  width: 100spx;
-  
-}
+
 .lg3{
   padding: 5px 5px 5px 8px;
   position: absolute;
@@ -283,6 +269,21 @@ text-align: center;
   align-items: center;
 }
 
+.terminos{
+  position: absolute;
+  top: 510px;
+  left: 570px;
+}
+
+.terminos1{
+  position: absolute;
+  top: 510px;
+  left: 600px;
+  width: 500px;
+  height: 10px;
+}
+
+
 .reguser{
   width: 55px;
   height: 5px;
@@ -307,8 +308,8 @@ text-align: center;
 
 .registrarse{
   position: absolute;
-  top: 505px;
-  left: 855px;
+  top: 590px;
+  left: 770px;
   height: 30px;
   width: 80px;
   align-items: center;
@@ -324,8 +325,8 @@ text-align: center;
   height: 30px;
   width: 80px;
   position: absolute;
-  top: 505px;
-  left: 700px;
+  top: 80px;
+  left: 770px;
   border: 0ch;
   text-align: center;
   line-height: 29px;
@@ -334,6 +335,103 @@ text-align: center;
   background-color: #FCA180;
   
 }
+
+/*REGISTRARSE USUARIO NORMAL*/
+
+.elg2{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 100spx;
+  
+}
+
+.elg3{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 390px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 100spx;
+  
+}
+.elg4{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 450px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  width: 100spx;
+  height: 35px;
+  
+}
+.elg5{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 330px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 220px;
+  
+}
+
+.elg6{
+  padding: 5px 5px 5px 8px;
+  position: absolute;
+  top: 260px;
+  left: 700px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #D9D9D9 ;
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 220px;
+  
+}
+
+.Eregistrarse{
+  position: absolute;
+  top: 590px;
+  left: 770px;
+  height: 30px;
+  width: 80px;
+  align-items: center;
+  border: 0ch;
+  border-radius: 11px;
+  background-color: #FFFE9F;
+  font-family: 'SF Pro';
+  font-size: 16px;
+}
+
+
+
 
 
 /* PONTILAUNCH */
