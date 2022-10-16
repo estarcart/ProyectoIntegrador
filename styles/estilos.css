@@ -115,6 +115,7 @@ text-align: center;
   position: absolute;
   top: 250px;
   left: 725px;
+  
 }
 .lg{ 
   padding: 5px 5px 5px 8px;
@@ -153,7 +154,14 @@ text-align: center;
   position: absolute;
   top: 430px;
   left: 780px;
-
+  height: 30px;
+  width: 80px;
+  align-items: center;
+  border: 0ch;
+  border-radius: 11px;
+  background-color: #FFFE9F;
+  font-family: 'SF Pro';
+  font-size: 16px;
 }
 
 /*REGISTRARSE USUARIO NORMAL*/
