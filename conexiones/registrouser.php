@@ -12,10 +12,8 @@ if (isset($_POST['registrarse'])) {
         $consulta= "INSERT INTO usuario(nombre_usuario, apellido_usuario, correo_usuario, fecha_usuario, contraseña_usuario) VALUES ('$nombre','$apellido','$email','$fecha','$contrasena')";
         $resultado = mysqli_query($conex,$consulta);
           
-        if ($resultado) {
-            ?>
-            <a href="../vistas/inicio.php"></a>
-            <?php
+        if ($resultado) {        
+            header("location:inicio.php");    
         }
     }
 }

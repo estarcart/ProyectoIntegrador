@@ -1,20 +1,21 @@
 <?php
-$user=$_POST['user'];
-$passw=$_POST['passw'];
 
-$conex = mysqli_connect("localhost","root","","pontilaunch");
+include('conexion.php');
 
-$consulta="SELECT * FROM usuario WHERE correo_usuario='$user' and contraseña_usuario='$passw'";
-$resultado=mysqli_query($conex,$consulta);
+$usuario=$_POST['user'];
+$passwd=$_POST['passwd'];
+
+$consulta = "SELECT * FROM usuario where correo_usuario = '$usuario' and contraseña_usuario = '$passwd'";
+$resultado= mysqli_query($conex, $consulta);
 
 $filas=mysqli_num_rows($resultado);
 
-if ($filas) {
+if($filas){
     header("location:register.php");
+
+}else{
+    include("home.html");
 }
-else {
-    echo "Error con la autentificación";
-}
-mysqli_free_result($resultado);
+mysqli_fre_result($resultado);
 mysqli_close($conex);
 ?>

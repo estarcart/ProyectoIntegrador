@@ -30,7 +30,7 @@
         <a href="../vistas/register.php">registrarse</a> <!--al darle click lo manda a registrarse-->
     </div>
     <div class="descripcion">
-        <p>pública - califica - negocia</p>
+        <p>publica - califica - negocia</p>
     </div>
    
 </body>

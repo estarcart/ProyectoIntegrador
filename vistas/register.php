@@ -19,7 +19,7 @@
         <a href="../vistas/inicio.php">regresar</a>
     </div>
     <div class="registro">
-        <p>registrate en pontilaunch como:</p>
+        <p>regístrate en pontilaunch como:</p>
     </div>
     <div class="fech">
         <p>fecha de nacimiento:</p>
@@ -32,13 +32,13 @@
     </div>
 
     <div class="terminos1">
-        <a>Sí, he leído y presto mi consentimiento a los Términos de Uso del sitio, y al procesamiento, al tratamiento y a la transferencia de mis datos personales conforme a lo dispuesta en la Política de Privacidad. </a>
+        <a>Sí, he leído y presto mi consentimiento a los Términos de Uso del sitio, y al procesamiento, tratamiento y transferencia de mis datos personales conforme a lo dispuesto en la Política de Privacidad. </a>
     </div>
 
     <div class="registra">
         <form method="post">
             
-            <input type="email" required placeholder="correo electronico" class="lg2" name="email" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
+            <input type="email" required placeholder="correo electrónico" class="lg2" name="email" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
             
             <input type="checkbox" required class="terminos">
             

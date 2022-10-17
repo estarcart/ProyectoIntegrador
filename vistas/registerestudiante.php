@@ -29,16 +29,16 @@
     </div>
 
     <div class="terminos2">
-        <a>Sí, he leído y presto mi consentimiento a los Términos de Uso del sitio, y al procesamiento, al tratamiento y a la transferencia de mis datos personales conforme a lo dispuesta en la Política de Privacidad. </a>
+        <a>Sí, he leído y presto mi consentimiento a los Términos de Uso del sitio, y al procesamiento, tratamiento y transferencia de mis datos personales conforme a lo dispuesto en la Política de Privacidad. </a>
     </div>
 
     <div class="usuareg">
         <a href="../vistas/register.php">usuario</a>
     </div>
     <div class="registra">
-        <form>
+        <form method="post">
             
-            <input type="text" required placeholder="correo electronico" class="elg2" name="email" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
+            <input type="text" required placeholder="correo electrónico" class="elg2" name="email" autocomplete = " off " > <!--cuadro para escribir el correo electronic-->
                 
             <input type="text" required placeholder="nombres" class="elg3" name="nombre" autocomplete = " off " > <!--cuadro para escribir el nombre-->
              
@@ -48,7 +48,7 @@
      
             <input type="password" required placeholder="contraseña" class="elg6" name="contrasena" autocomplete = " off " > <!--cuadro para escribir la fecha de nacimiento-->
 
-            <input type="text" required placeholder="identificacion" class="elg7" name="identificacion" autocomplete = " off " >
+            <input type="text" required placeholder="identificación" class="elg7" name="identificacion" autocomplete = " off " >
 
             <input type="text" required placeholder="universidad" class="elg8" name="universidad" autocomplete = " off " >
 
