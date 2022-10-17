@@ -19,14 +19,18 @@
     </div>
     <div class="inicio">
         <p>inicia sesion en pontilaunch</p>
-        <form action="validar.php" method="post">
-            <input type="email" required placeholder="correo electronico" class = "lg" autocomplete = " off " name="user">
-            <input type="password" required placeholder="contraseña" class = "lg1" autocomplete = " off " name="passwd"> 
+        <form method="post">
+            <input name="correo" type="email" required placeholder="correo electronico" class = "lg" autocomplete = " off ">
+            <input name="contra" type="password" required placeholder="contraseña" class = "lg1" autocomplete = " off "> 
             <input type="submit" value="ingresar" class="sub" name="valid">
         </form>
 
 
     </div>
+
+    <?php
+    include('../conexiones/valid.php');
+    ?>
     
 </body>
 </html>
