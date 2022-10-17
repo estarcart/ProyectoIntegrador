@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
     <style type="text/css">
     
         a{
@@ -18,35 +18,30 @@
 </head>
 <body>
     <div class="selecc"></div>
-    <!-- Rectangulo amarillo usuario -->
-    <a href="/vistas/perfiluser.html">
-    <div class="rectanguloUser"></div>
-    </a>
     <!-- Rectangulo amarillo proyectos -->
-    <a href="/vistas/publicar.html">
+    <div class="rectanguloUser"></div>
+    <a href="../vistas/publicar.php">
     <div class="rectanguloProyect"></div>
     </a>
     <!-- Icono usuario -->
     <div class="usuarioIcon">
-        <a href="/vistas/perfiluser.html">
-        <img src="/imagenes/usuario.png">
+        <img src="../imagenes/usuario.png">
         </a>
     </div>
     <!-- Texto usuario  -->
     <div class="usuarioText">
-        <a href="/vistas/perfiluser.html">
         <h1>Usuario</h1>
         </a>
     </div>
     <!-- Icono proyecto -->
     <div class="proyectIcon">
-        <a href="/vistas/publicar.html">
-        <img src="/imagenes/editar.png">
+        <a href="../vistas/publicar.php">
+        <img src="../imagenes/editar.png">
         </a>
     </div>
     <!-- Texto Proyecto -->
     <div class="proyecText">
-        <a href="/vistas/publicar.html">
+        <a href="../vistas/publicar.php">
         <h1>publicar nuevo proyecto</h1>
         </a>
     </div>
@@ -60,20 +55,20 @@
     
     <!-- Icono casa -->
     <div class="casa">
-        <a href="/vistas/home.html">
-        <img src="/imagenes/casa.png" href="/vistas/home.html">
+        <a href="../vistas/home_estudiante.php">
+        <img src="../imagenes/casa.png" href="../vistas/home_estudiante.php">
         </a>
     </div>
     <!-- Icono comentario -->
     <div class="comentario">
-        <a href="/vistas/mensajes.html">
-        <img src="/imagenes/comentario.png">
+        <a href="../vistas/mensajes.php">
+        <img src="../imagenes/comentario.png">
         </a>
     </div>
     <!-- Icono salir -->
     <div class="salir">
-        <a href="/vistas/inicio.html">
-        <img src="/imagenes/cerrar-sesion.png">
+        <a href="../vistas/inicio.php">
+        <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
 </html>

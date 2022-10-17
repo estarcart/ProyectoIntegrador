@@ -21,7 +21,7 @@
         <h1>pontilaunch</h1>
     </div>
     <div class="ingresar">
-        <a href="/vistas/home_invitado.html">ingresar</a> <!--al darle click lo manda al home-->
+        <a href="../vistas/home_invitado.php">ingresar</a> <!--al darle click lo manda al home-->
     </div>
     <div class="login">
         <a href="../vistas/login.php">- iniciar sesión -</a> <!--al darle click lo manda a iniciar sesion-->
