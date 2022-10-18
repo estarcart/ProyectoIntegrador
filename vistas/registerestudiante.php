@@ -48,13 +48,13 @@
      
             <input type="password" required placeholder="contraseña" class="elg6" name="contrasena" autocomplete = " off " > <!--cuadro para escribir la fecha de nacimiento-->
 
-            <input type="text" required placeholder="identificación" class="elg7" name="identificacion" autocomplete = " off " >
+            <input type="varchar" required placeholder="identificación" class="elg7" name="identificacion" autocomplete = " off " >
 
             <input type="text" required placeholder="universidad" class="elg8" name="universidad" autocomplete = " off " >
 
-            <input type="text" required placeholder="semestre" class="elg9" name="semestre" autocomplete = " off " >
+            <input type="varchar" required placeholder="semestre" class="elg9" name="semestre" autocomplete = " off " >
 
-            <input type="text" required placeholder="promedio" class="elg10" name="promedio" autocomplete = " off " >
+            <input type="varchar" required placeholder="promedio" class="elg10" name="promedio" autocomplete = " off " >
     
             <input type="submit" class="Eregistrarse" name="Eregistrarse" value="registrarse" > <!--al darle click lo registra en el sistema-->
             

@@ -646,6 +646,18 @@ text-align: center;
 
 }
 
+.pub{
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+
+
+
+
+
+
+
 /*VISTA COORDINADOR*/
 
 .usuarioText1 h1{
@@ -776,10 +788,36 @@ text-align: center;
   left: 500px;
   width: 290px;
 }
+.pdf{
+  position: absolute;
+  top: 545px;
+  left: 500px;
+  width: 290px;
+  font-size: 20px;
+  border: 0ch;
+  border-radius: 5px;
+  background-color: #F0F0F0;
+  height: 75px;
+  width: 300px;
+  text-align: center;
+}
 
+.img{
+  position: absolute;
+  top: 545px;
+  left: 813px;
+  width: 290px;
+  font-size: 20px;
+  border: 0ch;
+  border-radius: 5px;
+  background-color: #F0F0F0;
+  height: 75px;
+  width: 300px;
+  text-align: center;
+}
 .publi4{
   position: absolute;
-  top: 590px;
+  top: 650px;
   left: 700px;
   height: 30px;
   width: 200px;
@@ -790,3 +828,48 @@ text-align: center;
   font-family: 'SF Pro';
   font-size: 16px;
 }
+
+.publi5{
+  position: absolute;
+  top: 495px;
+  left: 650px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 11px;
+  color: black;
+  border: 0px solid #F0F0F0 ;
+  background-color: #F0F0F0;
+  height: 35px;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.publi6{
+  position: absolute;
+  top: 580px;
+  left: 515px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 0px;
+  color: black;
+  height: 30px;
+  width: 280px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.publi7{
+  position: absolute;
+  top: 580px;
+  left: 830px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 0px;
+  color: black;
+  height: 30px;
+  width: 280px;
+  font-size: 14px;
+  text-align: center;
+}
+

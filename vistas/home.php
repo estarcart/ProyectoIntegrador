@@ -19,20 +19,14 @@
 <body>
     <div class="selecc"></div>
     <!-- Rectangulo amarillo usuario -->
-    <a href="/vistas/perfiluser.html">
     <div class="rectanguloUser"></div>
-    </a>
     <!-- Icono usuario -->
     <div class="usuarioIcon">
-        <a href="/vistas/perfiluser.html">
-        <img src="/imagenes/usuario.png">
-        </a>
+    <img src="../imagenes/usuario.png">
     </div>
     <!-- Texto usuario  -->
-    <div class="usuarioText">
-        <a href="/vistas/perfiluser.html">
+    <div class="usuarioText">  
         <h1>Usuario</h1>
-        </a>
     </div>
 
     <div class="head"></div>
@@ -45,16 +39,20 @@
     
     <!-- Icono casa -->
     <div class="casa">
-        <a href="/vistas/home.html">
-        <img src="/imagenes/casa.png" href="/vistas/home.html">
+        <a href="../vistas/home.php">
+        <img src="../imagenes/casa.png" href="../vistas/home.php">
         </a>
     </div>
 
     <!-- Icono salir -->
     <div class="salir">
-        <a href="/vistas/inicio.html">
-        <img src="/imagenes/cerrar-sesion.png">
+        <a href="../vistas/inicio.php">
+        <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
+
+    
+
+
 </html>
     

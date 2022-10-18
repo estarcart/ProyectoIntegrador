@@ -1,3 +1,7 @@
+<?php
+$conex = mysqli_connect("localhost","root","","pontilaunch");
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -71,5 +75,31 @@
         <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
+
+    <div>
+        <form class="pub" method="post">
+        <?php
+        $sql="SELECT * FROM publicaciones";
+        $result=mysqli_query($conex,$sql);
+
+        while($mostrar=mysqli_fetch_array($result)){
+
+
+        ?>
+            <h1><?php echo $mostrar['titulo_publicacion'] ?></h1>
+            <p><?php echo $mostrar['sede_publicacion'] ?></p>
+            <a href="<?php echo $mostrar['yt_publicacion'] ?>">youtube</a>
+            <img src="" >
+            <img src="" >
+            <p><?php echo $mostrar['descripcion_publicacion'] ?></p>
+            <p><?php echo $mostrar['fecha_publicacion'] ?></p>
+        </form>
+    </div>
+
+    <?php
+    }
+    ?>
+
+
 </html>
     

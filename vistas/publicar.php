@@ -7,9 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css?v=<?php echo time(); ?>">
     <style type="text/css">
-    
         a{
             color: black;
             text-decoration: none;
@@ -47,19 +46,39 @@
         <h1>editor de proyectos</h1>
     </div>
 
+    <div class="pdf">
+        <a>añade un pdf:</a>
+    </div>
+
+    <div class="img">
+        <a>añade una imagen:</a>
+    </div>
+
 
     <div class="publicar">
-        <form method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
             <input type="text" required placeholder="titulo de proyecto" class="publi1" name="titulo" autocomplete="off">
 
             <input type="text" required placeholder="sede" name="sede" class="publi2" autocomplete="off">
 
             <input type="text" required placeholder="escriba una breve descripcion" name="descripcion" class="publi3" autocomplete="off">
 
-            <input type="submit" value="publicar proyecto" name="publi" class="publi4">
+            <input type="varchar" required placeholder="añade un link de YouTube" name="yt" class="publi5" autocomplete="off">
 
+            <input type="file"   name="pdf" class="publi6" autocomplete="off">
+
+            <input type="file"   name="imagen" class="publi7" autocomplete="off">
+
+            <input type="submit" value="publicar proyecto" name="publi" class="publi4">
         </form>
+    
+
     </div>
+
+        <?php
+        include('../conexiones/gpublicar.php');
+        ?>
+
 
 
 
