@@ -30,7 +30,9 @@
 
     <?php
     include('../conexiones/valid.php');
+    include('../conexiones/validestud.php');
     ?>
+    
     
 </body>
 </html>

@@ -34,8 +34,8 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     </div>
     <!-- Texto usuario  -->
     <div class="usuarioText">
-        <h1>Usuario</h1>
-        </a>
+        <h1>Estudiante</h1>
+
     </div>
     <!-- Icono proyecto -->
     <div class="proyectIcon">
@@ -77,29 +77,25 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     </div>
 
     <div>
-        <form class="pub" method="post">
         <?php
         $sql="SELECT * FROM publicaciones";
         $result=mysqli_query($conex,$sql);
-
         while($mostrar=mysqli_fetch_array($result)){
-
-
         ?>
+        <form class="pub" method="post">
             <h1><?php echo $mostrar['titulo_publicacion'] ?></h1>
-            <p><?php echo $mostrar['sede_publicacion'] ?></p>
-            <a href="<?php echo $mostrar['yt_publicacion'] ?>">youtube</a>
+            <p class="sed"><?php echo $mostrar['sede_publicacion'] ?></p>
+            <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
             <img src="" >
             <img src="" >
-            <p><?php echo $mostrar['descripcion_publicacion'] ?></p>
-            <p><?php echo $mostrar['fecha_publicacion'] ?></p>
+            <p class="des"><?php echo $mostrar['descripcion_publicacion'] ?></p>
+            <p class="fec"><?php echo $mostrar['fecha_publicacion'] ?></p>
+            <div class="cu"></div>
         </form>
     </div>
 
     <?php
     }
     ?>
-
-
 </html>
     

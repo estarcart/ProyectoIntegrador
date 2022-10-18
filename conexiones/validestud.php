@@ -5,7 +5,7 @@ if (isset($_POST['valid'])) {
 $correo=trim($_POST['correo']);
 $contra=trim($_POST['contra']);
 
-$consulta = "SELECT * FROM miembro where correo_estudiante = '$correo' and contraseña_estudiante = '$contra'";
+$consulta = "SELECT * FROM miembro where correo_estudiante = '$correo' and contrasena_estudiante = '$contra'";
 $resultado= mysqli_query($conex, $consulta);
 
 $filas=mysqli_num_rows($resultado);
