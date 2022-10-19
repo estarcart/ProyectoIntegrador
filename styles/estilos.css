@@ -619,6 +619,16 @@ text-align: center;
   border-radius: 3vh;
 }
 
+.todo{
+  position: relative;
+}
+
+
+.rectanguloProyect:hover {
+  border: 2px solid black ;
+}
+
+
 .rectanguloGrupo { /* Rectangulo amarillo */
   width: 285px;
   height: 75px;
@@ -627,6 +637,10 @@ text-align: center;
   left: 73%;
   top: 52%;
   border-radius: 3vh;
+}
+
+.rectanguloGrupo:hover {
+  border: 2px solid black ;
 }
 
 .rectanguloPubli { /* Rectangulo gris */
@@ -638,8 +652,6 @@ text-align: center;
   top: 360px;
   border-radius: 3vh;
   z-index: -1;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
@@ -682,108 +694,153 @@ text-align: center;
   font-weight: 400;
 }
 
+.pub{
+  width: 800px;
+  height: 170px;
+  background: #D9D9D9;
+  position:relative;
+  left:80px;
+  top: 100px;
+  border-radius: 3vh;
+}
+
+
+
 .pub .tit{
   position: relative;
-  top: 0%;
+  top: 10%;
   left: 5%;
   font-size: 26px;
-  display: flex;
   font-weight: 500;
+  text-align: right;
+  display: flex;
+  padding: 0%;
+  margin: 0%;
 }
 
 
 .pub .sed{
   position: relative;
-  top:0%;
-  left: 0%;
+  top:-5%;
+  left: 80%;
   font-size: 16px;
-  width: 150px;
+  width: 180px;
   text-align: right;
-  display: flex;
+  display:flex ;
+  padding: 0%;
+  margin: 0%;
 }
 
-.pub a.yt img{
+.pub a.yt {
   position: relative;
-  top:0%;
-  left: 0%;
-  font-size: 16px;
+  top:-20%;
+  left: 50%;
   width: 32px;
   height: 32px;
-
+  display: flex;
+  
 }
 
 .pub .des{
   position: relative;
-  top:0%;
-  left: 0%;
+  top:-20%;
+  left:5%;
   font-size: 16px;
   width: 500px;
+  display: flex;
+  padding: 0%;
+  margin: 0%;
 }
 
 .pub .fec{
   position: relative;
   top:0%;
-  left: 0%;
+  left: 85%;
   font-size: 16px;
   width: 150px;
+  display: flex;
+  padding: 0%;
+  margin: 0%;
 }
 .cu{
   z-index: -1;
   position: relative;
-  top:100px;
-  left: 80px;
+  left: 0%;
+  top: 0%;
+  display: flex;
   font-size: 16px;
   width: 800px;
   height: 200px;
   background-color: #D9D9D9;
   border-radius: 11px;
 }
-
+.publiOp{
+  width: 800px;
+  height: 50px;
+  background-color:#FFF9ED;
+  position:relative;
+  left:80px;
+  top: 365px;
+  border-radius: 3vh;
+  z-index: -1;
+  display: flex;
+}
 .boto1{
   position: relative;
-  left: 725px;
-  top: 552.5px;
+  left: 80%;
+  top: 0%;
+  height: 50%;
+  display: flex;
 }
 .boto2{
   position: relative;
-  left: 755px;
-  top: 552.5px;
+  left: 80.5%;
+  top: 0%;
+  display: flex;
+  height: 50%;
 }
 .boto3{
   position: relative;
-  left: 785px;
-  top: 552.5px;
+  left: 81%;
+  top: 0%;
+  display: flex;
+  height: 50%;
 }
 .boto4{
   position: relative;
-  left: 815px;
-  top: 552.5px;
+  left: 81.5%;
+  top: 0%;
+  display: flex;
+  height: 50%;
 }
 .boto5{
   position: relative;
-  left: 845px;
-  top: 552.5px;
+  left: 82%;
+  top: 0%;
+  display: flex;
+  height: 50%;
 }
 .coment1{
-  left: 80px;
-  top: 525px;
+  left: -15%;
+  top: 0%;
+  display: flex;
   position: relative;
   background-color: #F0F0F0;
   border-radius: 11px;
   border: 0ch;
-  width: 350px;
+  width: 40%;
+  height: 70%;
   padding: 10px 20px;
-  margin: auto;
-  margin-top: 20px;
   box-sizing: border-box;
 }
 
 .coment2{
   position: relative;
-  top: 545.3px;
-  left: 440px;
+  left: -14.5%;
+  top: 0%;
+  display: flex;
   height: 35px;
-  width: 100px;
+  width: 75px;
   align-items: center;
   border: 0ch;
   border-radius: 11px;
@@ -791,46 +848,41 @@ text-align: center;
   font-family: 'SF Pro';
   font-size: 16px;
 }
+.coment2:hover {
+  background-color: #FCA180;
+}
 
 .coments{
   position: relative;
-  top: 0px;
-  width: 100px;
+  left: 0%;
+  top: 0%;
+  display: flex;
   height: 100px;
 }
-
 .contact{
   position: relative;
-  top: 545.3px;
-  left: 550px;
+  left: -14%;
+  top: 0%;
+  display: flex;
   height: 35px;
-  width: 100px;
+  width: 62px;
   align-items: center;
   border: 0ch;
+  padding: 0px 5px;
   border-radius: 11px;
   background-color: #F56262;
   font-family: 'SF Pro';
   font-size: 16px;
   text-align: center;
-  line-height: 35px;
+  
 }
 
 .califi{
   position: relative;
-  top: 545.3px;
-  left: 660px;
-  height: 35px;
-  width: 200px;
-  align-items: center;
-  border: 0ch;
-  border-radius: 11px;
-  background-color: #D9D9D9;
-  font-family: 'SF Pro';
-  font-size: 16px;
-  text-align: left;
-  line-height: 35px;
-  padding: 0px 10px;
-  z-index: -1;
+  left: -1%;
+  top: 0%;
+  display: flex;
+  
 }
 
 /*VISTA COORDINADOR*/
@@ -966,7 +1018,7 @@ text-align: center;
 .pdf{
   position: absolute;
   top: 545px;
-  left: 500px;
+  left: 650px;
   width: 290px;
   font-size: 20px;
   border: 0ch;
@@ -1023,7 +1075,7 @@ text-align: center;
 .publi6{
   position: absolute;
   top: 580px;
-  left: 515px;
+  left: 665px;
   outline: none;
   font-size: 18px;
   border-radius: 0px;
@@ -1048,3 +1100,46 @@ text-align: center;
   text-align: center;
 }
 
+/*PAGINA MENSAJES*/
+.mensojo{
+  width: 500px;
+  height: 100px;
+  background: #D9D9D9;
+  position:relative;
+  left:500px;
+  top: 150px;
+  border-radius: 3vh;
+  z-index: -1;
+  
+}
+
+
+
+.menk{
+  position: relative;
+  top:10%;
+  left: 5%;
+  font-size: 16px;
+  width: 70%;
+  
+  display:flex ;
+}
+.enc{
+  position: relative;
+  top:10%;
+  left: 5%;
+  font-size: 16px;
+  width: 100%;
+  text-align: right;
+  display:flex;
+  font-weight: 1000;
+}
+.cork{
+  position: relative;
+  top:10%;
+  left: 5%;
+  font-size: 16px;
+  width: 100%;
+  text-align: right;
+  display:flex ;
+}

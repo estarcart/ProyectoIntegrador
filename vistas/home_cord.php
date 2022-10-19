@@ -1,3 +1,7 @@
+<?php
+$conex = mysqli_connect("localhost","root","","pontilaunch");
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,12 +38,6 @@
     <!-- Texto usuario  -->
     <div class="usuarioText1">
         <h1>Coordinador</h1>
-    </div>
-    <!-- Icono Gestion -->
-    <div class="gestIcon">
-        <a href="../vistas/cord_gestion.php">
-        <img src="../imagenes/gest.png" href="../vistas/cord_gestion.php">
-        </a>
     </div>
     <!-- Texto Gestionar -->
     <div class="proyectGest">
@@ -84,6 +82,29 @@
         <img src="../imagenes/gest.png">
         </a>
     </div>
+
+    <?php
+    $sql="SELECT * FROM publicaciones";
+    $result=mysqli_query($conex,$sql);
+     while($mostrar=mysqli_fetch_array($result)){
+    ?>
+        <form class="pub" method="post">
+            <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
+            <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
+            <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
+            <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
+            <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
+            
+        </form>
+    <?php
+    include('../conexiones/comentarios.php');
+    ?>
+
+    <?php
+    }
+    ?>
+    </body>
     
+
 </html>
     

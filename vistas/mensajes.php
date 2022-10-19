@@ -46,20 +46,21 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
-
-    <div>
         <?php
         $sql="SELECT * FROM contacto";
         $result=mysqli_query($conex,$sql);
         while($mostrar=mysqli_fetch_array($result)){
         ?>
-        <form method="post">
-            <h1><?php echo $mostrar['encabezado_contacto'] ?></h1>
-            <p><?php echo $mostrar['correo_contacto'] ?></p>
-            <p><?php echo $mostrar['mensaje_contacto'] ?></p>
-            <div>
+        
+        <form class="mensojo" method="post">
+            <label class="enc"><?php echo $mostrar['encabezado_contacto'] ?></label>
+            <label class="cork"><?php echo $mostrar['correo_contacto'] ?></label>
+            <label class="menk"><?php echo $mostrar['mensaje_contacto'] ?></label>
+        </form>
         <?php
         }
         ?>
+    </div>
+    </body>
 </html>
     

@@ -24,8 +24,6 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <div class="selecc"></div>
     <!-- Rectangulo amarillo usuario -->
     <div class="rectanguloUser"></div>
-     <!-- Rectangulo publicaciones -->
-     <div class="rectanguloPubli"></div>
     <!-- Icono usuario -->
     <div class="usuarioIcon">
     <img src="../imagenes/usuario.png">
@@ -57,66 +55,67 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         </a>
     </div>
 
-    <div>
-        <?php
-        $sql="SELECT * FROM publicaciones";
-        $result=mysqli_query($conex,$sql);
-        while($mostrar=mysqli_fetch_array($result)){
-        ?>
-        <form class="pub" method="post">
-        <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
-                <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
-                <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
-                <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
-                <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
-                <button class="boto1" name="1star">
-                    1
-                </button>
-                <button class="boto2"  name="2star">
-                    2
-                </button>
-                <button class="boto3"  name="3star">
-                    3
-                </button>
-                <button class="boto4"  name="4star">
-                    4
-                </button>
-                <button class="boto5"  name="5star">
-                    5
-                </button>
-            <div>
-                <form method="post">
-                    <div>
-                        <input type="varchar" class ="coment1" placeholder="Agrega tu comentario" name="comentariotxt">
-                        <input type="submit" class="coment2" value="comentar" name="coment" >
-                    </div>
-                    <?php
-                    $sqli="SELECT * FROM comentario";
-                    $result=mysqli_query($conex,$sqli);
-                    while($most=mysqli_fetch_array($result)){
-                    ?>
-                    <div class="coments">
-                        <h1><?php echo $most['texto_comentario']?></h1>
-                    </div>
-                </form>
-            </div>
-            <?php
-            }
-            ?>
-        </form>
-    </div>
-    <div class="contact">
-    <a href="contacto.php">contactar</a>
-     </div>
-     <div class="califi">califica:</div>
-
     <?php
-    include('../conexiones/comentarios.php');
-    include('../conexiones/calificaciones.php');
+    $sql="SELECT * FROM publicaciones";
+    $result=mysqli_query($conex,$sql);
+     while($mostrar=mysqli_fetch_array($result)){
     ?>
-
+        <form class="pub" method="post">
+            <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
+            <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
+            <a class="yt" href="<?php echo $mostrar['yt_publicacion']?>"><img src="../imagenes/youtube.png"></a>
+            <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
+            <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
+            
+        </form>
     <?php
     }
     ?>
+        
+        <div class="publiOp">
+                
+            <button class="boto1" name="1star">
+                1
+            </button>
+            <button class="boto2"  name="2star">
+                2
+            </button>
+            <button class="boto3"  name="3star">
+                3
+            </button>
+            <button class="boto4"  name="4star">
+                4
+            </button>
+            <button class="boto5"  name="5star">
+                5
+            </button>  
+                    <input type="varchar" class ="coment1" placeholder="Agrega tu comentario" name="comentariotxt">
+                    <input type="submit" class="coment2" value="comentar" name="coment" >
+                    
+                <?php
+                $sqli="SELECT * FROM comentario";
+                $result=mysqli_query($conex,$sqli);
+                while($most=mysqli_fetch_array($result)){
+                ?>
+                <div class="coments">
+                    <h1><?php echo $most['texto_comentario']?></h1>
+                    
+            </form>
+            
+        <?php
+        }
+        ?>
+    </form>
+        <div class="contact">
+        <a href="contacto.php">contactar</a>
+        </div>
+        <div class="califi">califica:</div>
+    </div>
+<?php
+include('../conexiones/comentarios.php');
+include('../conexiones/calificaciones.php');
+?>
+
+</body>
 </html>
     

@@ -50,9 +50,7 @@
         <a>añade un pdf:</a>
     </div>
 
-    <div class="img">
-        <a>añade una imagen:</a>
-    </div>
+   
 
 
     <div class="publicar">
@@ -67,7 +65,7 @@
 
             <input type="file"   name="pdf" class="publi6" autocomplete="off">
 
-            <input type="file"   name="imagen" class="publi7" autocomplete="off">
+            
 
             <input type="submit" value="publicar proyecto" name="publi" class="publi4">
         </form>

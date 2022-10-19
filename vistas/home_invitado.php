@@ -54,27 +54,20 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
-
-    <div>
-        
-        <?php
-        $sql="SELECT * FROM publicaciones";
-        $result=mysqli_query($conex,$sql);
-        while($mostrar=mysqli_fetch_array($result)){
-        ?>
-        <div class="rectanguloPubli">
-            <form class="pub" method="post">
-                <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
-                <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
-                <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
-                <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
-                <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
+    
+    <?php
+    $sql="SELECT * FROM publicaciones";
+    $result=mysqli_query($conex,$sql);
+     while($mostrar=mysqli_fetch_array($result)){
+    ?>
+        <form class="pub" method="post">
+            <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
+            <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
+            <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
+            <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
+            <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
             
-            </form>
-        </div>
-    </div>
-
-
+        </form>
     <?php
     include('../conexiones/comentarios.php');
     ?>
@@ -82,5 +75,6 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <?php
     }
     ?>
+</body>
 </html>
     
