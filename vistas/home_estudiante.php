@@ -24,19 +24,21 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <div class="selecc"></div>
     <!-- Rectangulo amarillo proyectos -->
     <div class="rectanguloUser"></div>
+     <!-- Rectangulo naranja publicar -->
     <a href="../vistas/publicar.php">
-    <div class="rectanguloProyect"></div>
-    <!--<div class="rectanguloGrupo"></div>-->
-    </a>
+        <div class="rectanguloProyect"></div>
+        </a> 
+    <!-- Rectangulo rojo grupo -->
+    <a href="../vistas/grupo.php">
+        <div class="rectanguloGrupo"></div>
+        </a>
     <!-- Icono usuario -->
     <div class="usuarioIcon">
         <img src="../imagenes/usuario.png">
-        </a>
     </div>
     <!-- Texto usuario  -->
     <div class="usuarioText">
         <h1>Estudiante</h1>
-
     </div>
     <!-- Icono proyecto -->
     <div class="proyectIcon">
@@ -50,19 +52,12 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         <h1>publicar nuevo proyecto</h1>
         </a>
     </div>
-
-    <!-- Icono grupo 
-    <div class="grupoIcon">
-        <a href="../vistas/publicar.php">
-        <img src="../imagenes/grupo.png">
-        </a>
-    </div>
-     Texto grupo 
+  
     <div class="grupoText">
-        <a href="../vistas/publicar.php">
+        <a href="../vistas/grupo.php">
         <h1>mi grupo</h1>
         </a>
-    </div>-->
+    </div>
     
     <div class="head"></div>
     <div class="pontilaunchHome">

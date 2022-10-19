@@ -596,9 +596,9 @@ text-align: center;
   left: 75%;
 }
 
-/* Rectangulos en la parte izquierda */
+/* Rectangulos en la parte derecha */
 
-.rectanguloUser { /* Rectangulo amarillo */ 
+.rectanguloUser { /* Rectangulo naranja */ 
 
   width: 285px;
   height: 120px;
@@ -616,6 +616,16 @@ text-align: center;
   position:fixed;
   left: 73%;
   top: 40%;
+  border-radius: 3vh;
+}
+
+.rectanguloGrupo { /* Rectangulo amarillo */
+  width: 285px;
+  height: 75px;
+  background: #F56262;
+  position:fixed;
+  left: 73%;
+  top: 52%;
   border-radius: 3vh;
 }
 
@@ -644,6 +654,18 @@ text-align: center;
   color: #070707;
   font-weight: 400;
 
+}
+
+.grupoText h1{
+  position: fixed;
+  left: 80%;
+  top:55%;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 10px;
+  text-align: center;  
+  color: #070707;
+  font-weight: 400;
 }
 
 .pub h1{
