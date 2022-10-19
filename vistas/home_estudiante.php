@@ -24,6 +24,9 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <div class="selecc"></div>
     <!-- Rectangulo amarillo proyectos -->
     <div class="rectanguloUser"></div>
+    <!-- Rectangulo publicaciones -->
+    <div class="rectanguloPubli"></div>
+
      <!-- Rectangulo naranja publicar -->
     <a href="../vistas/publicar.php">
         <div class="rectanguloProyect"></div>
@@ -96,43 +99,35 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
             <h1><?php echo $mostrar['titulo_publicacion'] ?></h1>
             <p class="sed"><?php echo $mostrar['sede_publicacion'] ?></p>
             <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
-            <img src="" >
-            <img src="" >
             <p class="des"><?php echo $mostrar['descripcion_publicacion'] ?></p>
             <p class="fec"><?php echo $mostrar['fecha_publicacion'] ?></p>
-            <div>
                 <button class="boto1" name="1star">
                     1
                 </button>
-
                 <button class="boto2"  name="2star">
                     2
                 </button>
-
                 <button class="boto3"  name="3star">
                     3
                 </button>
-
                 <button class="boto4"  name="4star">
                     4
                 </button>
-
                 <button class="boto5"  name="5star">
                     5
                 </button>
-            </div>
             <div>
                 <form method="post">
                     <div>
                         <input type="varchar" class ="coment1" placeholder="Agrega tu comentario" name="comentariotxt">
-                        <input type="submit" value="comentar" name="coment" >
+                        <input type="submit" class="coment2" value="comentar" name="coment" >
                     </div>
                     <?php
                     $sqli="SELECT * FROM comentario";
                     $result=mysqli_query($conex,$sqli);
                     while($most=mysqli_fetch_array($result)){
                     ?>
-                    <div>
+                    <div class="coments">
                         <h1><?php echo $most['texto_comentario']?></h1>
                     </div>
                 </form>
@@ -142,9 +137,10 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
             ?>
         </form>
     </div>
-
+    <div class="contact">
     <a href="contacto.php">contactar</a>
-
+     </div>
+     <div class="califi">califica:</div>
     <?php
     include('../conexiones/comentarios.php');
     include('../conexiones/calificaciones.php');
