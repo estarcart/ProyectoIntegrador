@@ -1,3 +1,7 @@
+<?php
+$conex = mysqli_connect("localhost","root","","pontilaunch");
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,5 +46,20 @@
         <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
+
+    <div>
+        <?php
+        $sql="SELECT * FROM contacto";
+        $result=mysqli_query($conex,$sql);
+        while($mostrar=mysqli_fetch_array($result)){
+        ?>
+        <form method="post">
+            <h1><?php echo $mostrar['encabezado_contacto'] ?></h1>
+            <p><?php echo $mostrar['correo_contacto'] ?></p>
+            <p><?php echo $mostrar['mensaje_contacto'] ?></p>
+            <div>
+        <?php
+        }
+        ?>
 </html>
     

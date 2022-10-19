@@ -26,6 +26,7 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <div class="rectanguloUser"></div>
     <a href="../vistas/publicar.php">
     <div class="rectanguloProyect"></div>
+    <!--<div class="rectanguloGrupo"></div>-->
     </a>
     <!-- Icono usuario -->
     <div class="usuarioIcon">
@@ -49,6 +50,20 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         <h1>publicar nuevo proyecto</h1>
         </a>
     </div>
+
+    <!-- Icono grupo 
+    <div class="grupoIcon">
+        <a href="../vistas/publicar.php">
+        <img src="../imagenes/grupo.png">
+        </a>
+    </div>
+     Texto grupo 
+    <div class="grupoText">
+        <a href="../vistas/publicar.php">
+        <h1>mi grupo</h1>
+        </a>
+    </div>-->
+    
     <div class="head"></div>
     <div class="pontilaunchHome">
         <h1>pontilaunch</h1>
@@ -91,31 +106,31 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
             <p class="des"><?php echo $mostrar['descripcion_publicacion'] ?></p>
             <p class="fec"><?php echo $mostrar['fecha_publicacion'] ?></p>
             <div>
-                <button name="1star">
-                    <p>1</p>
+                <button class="boto1" name="1star">
+                    1
                 </button>
 
-                <button name="2star">
-                    <p>2</p>
+                <button class="boto2"  name="2star">
+                    2
                 </button>
 
-                <button name="3star">
-                    <p>3</p>
+                <button class="boto3"  name="3star">
+                    3
                 </button>
 
-                <button name="4star">
-                    <p>4</p>
+                <button class="boto4"  name="4star">
+                    4
                 </button>
 
-                <button name="5star">
-                    <p>5</p>
+                <button class="boto5"  name="5star">
+                    5
                 </button>
             </div>
             <div>
                 <form method="post">
                     <div>
-                        <input type="varchar" placeholder="Agrega tu comentario" name="comentariotxt">
-                        <input type="submit" value="enviar" name="coment">
+                        <input type="varchar" class ="coment1" placeholder="Agrega tu comentario" name="comentariotxt">
+                        <input type="submit" value="comentar" name="coment" >
                     </div>
                     <?php
                     $sqli="SELECT * FROM comentario";
@@ -133,7 +148,7 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         </form>
     </div>
 
-    <a href="contacto.php">contactos</a>
+    <a href="contacto.php">contactar</a>
 
     <?php
     include('../conexiones/comentarios.php');

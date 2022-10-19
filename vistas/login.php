@@ -31,6 +31,7 @@
     <?php
     include('../conexiones/valid.php');
     include('../conexiones/validestud.php');
+    include('../conexiones/validcor.php');
     ?>
     
     

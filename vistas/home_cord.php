@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
     <style type="text/css">
         a{
             color: black;
@@ -20,16 +20,16 @@
     <!-- Rectangulo amarillo usuario -->
     <div class="rectanguloUser"></div>
     <!-- Rectangulo rojo gestionar iniciativas -->
-    <a href="/vistas/cord_gestion.html">
+    <a href="../vistas/cord_gestion.php">
         <div class="rectanguloGest"></div>
         </a>
     <!-- Rectangulo gris administrar usuarios -->  
-    <a href="/vistas/cord_adminusuarios.html">
+    <a href="../vistas/cord_adminusuarios.php">
         <div class="rectanguloadmuser"></div>
         </a>
     <!-- Icono usuario -->
     <div class="usuarioIcon">     
-        <img src="/imagenes/usuario.png">
+        <img src="../imagenes/usuario.png">
     </div>
     <!-- Texto usuario  -->
     <div class="usuarioText1">
@@ -37,13 +37,13 @@
     </div>
     <!-- Icono Gestion -->
     <div class="gestIcon">
-        <a href="/vistas/cord_gestion.html">
-        <img src="/imagenes/gest.png" href="/vistas/cord_gestion.html">
+        <a href="../vistas/cord_gestion.php">
+        <img src="../imagenes/gest.png" href="../vistas/cord_gestion.php">
         </a>
     </div>
     <!-- Texto Gestionar -->
     <div class="proyectGest">
-        <a href="/vistas/cord_gestion.html">
+        <a href="../vistas/cord_gestion.php">
         <h1>gestionar iniciativas</h1>
         </a>
     </div>
@@ -56,32 +56,32 @@
     </div>
     <!--Texto administrar usuarios-->
     <div class="adminuser">
-        <a href="/vistas/cord_adminusuarios.html">
+        <a href="../vistas/cord_adminusuarios.php">
         <h1>administrar usuarios</h1>
         </a>
     </div>
      <!-- Icono administrar usuario-->
      <div class="admuserIcon">
-        <a href="/vistas/cord_adminusuarios.html">
-        <img src="/imagenes/admusuarios.png" href="/vistas/cord_adminusuarios.html">
+        <a href="../vistas/cord_adminusuarios.php">
+        <img src="../imagenes/admusuarios.png" href="../vistas/cord_adminusuarios.php">
         </a>
     </div>
     <!-- Icono casa -->
     <div class="casa">
-        <a href="/vistas/home_cord.html">
-        <img src="/imagenes/casa.png" href="/vistas/home.html">
+        <a href="../vistas/home_cord.php">
+        <img src="../imagenes/casa.png" href="../vistas/home.php">
         </a>
     </div>
     <!-- Icono salir -->
     <div class="salir">
-        <a href="/vistas/inicio.html">
-        <img src="/imagenes/cerrar-sesion.png">
+        <a href="../vistas/inicio.php">
+        <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
     <!-- Icono gestionar iniciativa -->
     <div class="admfoto">
-        <a href="/vistas/cord_gestion.html">
-        <img src="/imagenes/gest.png">
+        <a href="../vistas/cord_gestion.php">
+        <img src="../imagenes/gest.png">
         </a>
     </div>
     

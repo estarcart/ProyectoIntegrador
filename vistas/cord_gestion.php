@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
     <style type="text/css">
     
         a{
@@ -26,14 +26,14 @@
     </div>
     <!-- Icono casa -->
     <div class="casa">
-        <a href="/vistas/home_cord.html">
-        <img src="/imagenes/casa.png" href="/vistas/home_cord.html">
+        <a href="../vistas/home_cord.php">
+        <img src="../imagenes/casa.png" href="/vistas/home_cord.php">
         </a>
     </div>
     <!-- Icono salir -->
     <div class="salir">
-        <a href="/vistas/inicio.html">
-        <img src="/imagenes/cerrar-sesion.png">
+        <a href="../vistas/inicio.php">
+        <img src="../imagenes/cerrar-sesion.png">
         </a>
     </div>
 </html>
