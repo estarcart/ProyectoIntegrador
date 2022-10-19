@@ -1,3 +1,7 @@
+<?php
+$conex = mysqli_connect("localhost","root","","pontilaunch");
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,8 +55,72 @@
         </a>
     </div>
 
-    
+    <div>
+        <?php
+        $sql="SELECT * FROM publicaciones";
+        $result=mysqli_query($conex,$sql);
+        while($mostrar=mysqli_fetch_array($result)){
+        ?>
+        <form class="pub" method="post">
+            <h1><?php echo $mostrar['titulo_publicacion'] ?></h1>
+            <p class="sed"><?php echo $mostrar['sede_publicacion'] ?></p>
+            <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
+            <img src="" >
+            <img src="" >
+            <p class="des"><?php echo $mostrar['descripcion_publicacion'] ?></p>
+            <p class="fec"><?php echo $mostrar['fecha_publicacion'] ?></p>
+            <div>
+                <button name="1star">
+                    <p>1</p>
+                </button>
 
+                <button name="2star">
+                    <p>2</p>
+                </button>
 
+                <button name="3star">
+                    <p>3</p>
+                </button>
+
+                <button name="4star">
+                    <p>4</p>
+                </button>
+
+                <button name="5star">
+                    <p>5</p>
+                </button>
+            </div>
+            <div>
+                <form method="post">
+                    <div>
+                        <input type="varchar" placeholder="Agrega tu comentario" name="comentariotxt">
+                        <input type="submit" value="enviar" name="coment">
+                    </div>
+                    <?php
+                    $sqli="SELECT * FROM comentario";
+                    $result=mysqli_query($conex,$sqli);
+                    while($most=mysqli_fetch_array($result)){
+                    ?>
+                    <div>
+                        <h1><?php echo $most['texto_comentario']?></h1>
+                    </div>
+                </form>
+            </div>
+            <?php
+            }
+            ?>
+        </form>
+    </div>
+
+    <a href="contacto.php">contactos</a>
+
+    <?php
+    include('../conexiones/comentarios.php');
+    include('../conexiones/calificaciones.php');
+    ?>
+
+    <?php
+    }
+    ?>
 </html>
     
