@@ -56,39 +56,24 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     </div>
 
     <div>
+        
         <?php
         $sql="SELECT * FROM publicaciones";
         $result=mysqli_query($conex,$sql);
         while($mostrar=mysqli_fetch_array($result)){
         ?>
-        <form class="pub" method="post">
-            <h1><?php echo $mostrar['titulo_publicacion'] ?></h1>
-            <p class="sed"><?php echo $mostrar['sede_publicacion'] ?></p>
-            <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
-            <img src="" >
-            <img src="" >
-            <p class="des"><?php echo $mostrar['descripcion_publicacion'] ?></p>
-            <p class="fec"><?php echo $mostrar['fecha_publicacion'] ?></p>
+        <div class="rectanguloPubli">
+            <form class="pub" method="post">
+                <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
+                <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
+                <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
+                <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
+                <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
             
-            <div>
-                <form method="post">
-                    <?php
-                    $sqli="SELECT * FROM comentario";
-                    $result=mysqli_query($conex,$sqli);
-                    while($most=mysqli_fetch_array($result)){
-                    ?>
-                    <div>
-                        <h1><?php echo $most['texto_comentario']?></h1>
-                    </div>
-                </form>
-            </div>
-            <?php
-            }
-            ?>
-        </form>
+            </form>
+        </div>
     </div>
 
-    <a href="contacto.php">contactos</a>
 
     <?php
     include('../conexiones/comentarios.php');

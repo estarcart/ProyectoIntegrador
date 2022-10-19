@@ -10,8 +10,8 @@ if (isset($_REQUEST['coment'])){
         $consulta= "INSERT INTO comentario(texto_comentario) VALUES('$coment')";
         $result = mysqli_query($conex,$consulta);
 
-        if ($result) {        
-            header("location:home_estudiante.php");    
+        if($result){        
+            header('refresh:1;url=home_estudiante.php');    
         }
     }
 }

@@ -24,6 +24,8 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <div class="selecc"></div>
     <!-- Rectangulo amarillo usuario -->
     <div class="rectanguloUser"></div>
+     <!-- Rectangulo publicaciones -->
+     <div class="rectanguloPubli"></div>
     <!-- Icono usuario -->
     <div class="usuarioIcon">
     <img src="../imagenes/usuario.png">
@@ -62,46 +64,38 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
         while($mostrar=mysqli_fetch_array($result)){
         ?>
         <form class="pub" method="post">
-            <h1><?php echo $mostrar['titulo_publicacion'] ?></h1>
-            <p class="sed"><?php echo $mostrar['sede_publicacion'] ?></p>
-            <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
-            <img src="" >
-            <img src="" >
-            <p class="des"><?php echo $mostrar['descripcion_publicacion'] ?></p>
-            <p class="fec"><?php echo $mostrar['fecha_publicacion'] ?></p>
-            <div>
-                <button name="1star">
-                    <p>1</p>
+        <label class="tit"><?php echo $mostrar['titulo_publicacion'] ?></label>
+                <label class="sed"><?php echo $mostrar['sede_publicacion'] ?></label>
+                <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
+                <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
+                <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
+                <button class="boto1" name="1star">
+                    1
                 </button>
-
-                <button name="2star">
-                    <p>2</p>
+                <button class="boto2"  name="2star">
+                    2
                 </button>
-
-                <button name="3star">
-                    <p>3</p>
+                <button class="boto3"  name="3star">
+                    3
                 </button>
-
-                <button name="4star">
-                    <p>4</p>
+                <button class="boto4"  name="4star">
+                    4
                 </button>
-
-                <button name="5star">
-                    <p>5</p>
+                <button class="boto5"  name="5star">
+                    5
                 </button>
-            </div>
             <div>
                 <form method="post">
                     <div>
-                        <input type="varchar" placeholder="Agrega tu comentario" name="comentariotxt">
-                        <input type="submit" value="enviar" name="coment">
+                        <input type="varchar" class ="coment1" placeholder="Agrega tu comentario" name="comentariotxt">
+                        <input type="submit" class="coment2" value="comentar" name="coment" >
                     </div>
                     <?php
                     $sqli="SELECT * FROM comentario";
                     $result=mysqli_query($conex,$sqli);
                     while($most=mysqli_fetch_array($result)){
                     ?>
-                    <div>
+                    <div class="coments">
                         <h1><?php echo $most['texto_comentario']?></h1>
                     </div>
                 </form>
@@ -111,8 +105,10 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
             ?>
         </form>
     </div>
-
-    <a href="contacto.php">contactos</a>
+    <div class="contact">
+    <a href="contacto.php">contactar</a>
+     </div>
+     <div class="califi">califica:</div>
 
     <?php
     include('../conexiones/comentarios.php');
