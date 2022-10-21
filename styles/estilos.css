@@ -785,40 +785,9 @@ text-align: center;
   z-index: -1;
   display: flex;
 }
-.boto1{
+.pub button .boton{
+  left: 50%;
   position: relative;
-  left: 80%;
-  top: 0%;
-  height: 50%;
-  display: flex;
-}
-.boto2{
-  position: relative;
-  left: 80.5%;
-  top: 0%;
-  display: flex;
-  height: 50%;
-}
-.boto3{
-  position: relative;
-  left: 81%;
-  top: 0%;
-  display: flex;
-  height: 50%;
-}
-.boto4{
-  position: relative;
-  left: 81.5%;
-  top: 0%;
-  display: flex;
-  height: 50%;
-}
-.boto5{
-  position: relative;
-  left: 82%;
-  top: 0%;
-  display: flex;
-  height: 50%;
 }
 .coment1{
   left: -15%;

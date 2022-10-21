@@ -66,7 +66,6 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
     <div class="pontilaunch1Home">
         <h1>pontilaunch</h1>
     </div>
-    
     <!-- Icono casa -->
     <div class="casa">
         <a href="../vistas/home_estudiante.php">
@@ -96,31 +95,28 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
             <a class="yt" href="<?php echo $mostrar['yt_publicacion'] ?>"><img src="../imagenes/youtube.png"></a>
             <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
             <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
+            <button class="boton" name="1star">
+            1
+            </button>
+            <button class="boton"  name="2star">
+            2
+            </button>
+            <button class="boton"  name="3star">
+            3
+            </button>
+            <button class="boton"  name="4star">
+            4
+            </button>
+            <button class="boton"  name="5star">
+            5
+            </button>
             
         </form>
-    <?php
-    include('../conexiones/comentarios.php');
-    ?>
 
     <?php
     }
     ?>
     <form class="publiOp"method="post">
-        <button class="boto1" name="1star">
-            1
-        </button>
-        <button class="boto2"  name="2star">
-            2
-        </button>
-        <button class="boto3"  name="3star">
-            3
-        </button>
-        <button class="boto4"  name="4star">
-                4
-        </button>
-        <button class="boto5"  name="5star">
-                5
-        </button>
         <div class="contact">
             <a href="contacto.php">contactar</a>
             </div>
@@ -134,7 +130,8 @@ $conex = mysqli_connect("localhost","root","","pontilaunch");
             ?>
             <div class="coments">
             <h1><?php echo $most['texto_comentario']?></h1>
-            
+            </div>
+                  
     </form>
 
 <?php
