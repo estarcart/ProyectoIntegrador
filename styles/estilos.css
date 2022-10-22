@@ -307,7 +307,6 @@ text-align: center;
   height: 10px;
 }
 
-
 .reguser{
   width: 55px;
   height: 5px;
@@ -746,7 +745,7 @@ text-align: center;
   top:-20%;
   left:5%;
   font-size: 16px;
-  width: 500px;
+  width: 400px;
   display: flex;
   padding: 0%;
   margin: 0%;
@@ -830,7 +829,7 @@ text-align: center;
 }
 .contact{
   position: relative;
-  left: -14%;
+  left: 0%;
   top: 0%;
   display: flex;
   height: 35px;

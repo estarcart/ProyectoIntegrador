@@ -111,7 +111,9 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
             <button class="boton" name="5star">
                 5
             </button>
-
+            <div class="contact">
+                <a href="contacto.php">contactar</a>
+            </div>
         </form>
 
     <?php
