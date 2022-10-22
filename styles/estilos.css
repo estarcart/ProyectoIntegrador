@@ -539,8 +539,8 @@ text-align: center;
   z-index: 1;
 }
 .pontilaunchHome{ /*titulo de la pagina arriba a la derecha */
-  position: fixed;
-  left: 44px;
+  position: absolute;
+  left: 37px;
   font-style: normal;
   font-size: 25px;
   line-height: 17px;
@@ -549,8 +549,8 @@ text-align: center;
   }
   
   .pontilaunch1Home{ /*titulo 2 de la pagina arriba a la derecha*/
-    position: fixed;
-    left: 40px;
+    position: absolute;
+    left: 32px;
     font-style: normal;
     font-size: 25px;
     line-height: 17px;
@@ -695,13 +695,13 @@ text-align: center;
 
 .pub{
   width: 800px;
-  height: 500px;
+  height: 350px;
   background: #D9D9D9;
   position:relative;
-  left:80px;
+  left:20px;
   top: 100px;
   border-radius: 3vh;
-  z-index: -1;
+  margin-bottom: 300px;
 }
 
 
@@ -716,13 +716,14 @@ text-align: center;
   display: flex;
   padding: 0%;
   margin: 0%;
+
 }
 
 
 .pub .sed{
   position: relative;
-  top:-5%;
-  left: 80%;
+  top:69%;
+  left: 72%;
   font-size: 16px;
   width: 180px;
   text-align: right;
@@ -731,14 +732,12 @@ text-align: center;
   margin: 0%;
 }
 
-.pub a.yt {
+.pub .yt {
   position: relative;
-  top:-20%;
-  left: 50%;
-  width: 32px;
-  height: 32px;
+  top:0%;
+  left: 60%;
   display: flex;
-  
+  border-radius: 3vh;
 }
 
 .pub .des{
@@ -779,7 +778,7 @@ text-align: center;
   left: 50%;
   position: relative;
 }
-.coment1{
+.pub .coment1{
   left: 0%;
   top: 0%;
   display: flex;
@@ -788,7 +787,7 @@ text-align: center;
   border-radius: 11px;
   border: 0ch;
   width: 40%;
-  height: 70%;
+  height: 20%;
   padding: 10px 20px;
   box-sizing: border-box;
 }
