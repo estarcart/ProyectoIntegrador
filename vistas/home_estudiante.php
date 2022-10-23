@@ -29,10 +29,7 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     <a href="../vistas/publicar.php">
         <div class="rectanguloProyect"></div>
     </a>
-    <!-- Rectangulo rojo grupo -->
-    <a href="../vistas/grupo.php">
-        <div class="rectanguloGrupo"></div>
-    </a>
+
     <!-- Icono usuario -->
     <div class="usuarioIcon">
         <img src="../imagenes/usuario.png">
@@ -51,12 +48,6 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     <div class="proyecText">
         <a href="../vistas/publicar.php">
             <h1>publicar nuevo proyecto</h1>
-        </a>
-    </div>
-
-    <div class="grupoText">
-        <a href="../vistas/grupo.php">
-            <h1>mi grupo</h1>
         </a>
     </div>
 

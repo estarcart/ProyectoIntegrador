@@ -594,7 +594,12 @@ text-align: center;
   top: 43%;
   left: 75%;
 }
-
+.mensjent{
+  position: absolute;
+  top:80px;
+  left: 500px;
+  width: 500px;
+}
 /* Rectangulos en la parte derecha */
 
 .rectanguloUser { /* Rectangulo naranja */ 
@@ -627,20 +632,6 @@ text-align: center;
   border: 2px solid black ;
 }
 
-
-.rectanguloGrupo { /* Rectangulo amarillo */
-  width: 285px;
-  height: 75px;
-  background: #F56262;
-  position:fixed;
-  left: 73%;
-  top: 52%;
-  border-radius: 3vh;
-}
-
-.rectanguloGrupo:hover {
-  border: 2px solid black ;
-}
 
 .rectanguloPubli { /* Rectangulo gris */
   width: 800px;
@@ -679,18 +670,6 @@ text-align: center;
   color: #070707;
   font-weight: 400;
 
-}
-
-.grupoText h1{
-  position: fixed;
-  left: 80%;
-  top:55%;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 10px;
-  text-align: center;  
-  color: #070707;
-  font-weight: 400;
 }
 
 .pub{
