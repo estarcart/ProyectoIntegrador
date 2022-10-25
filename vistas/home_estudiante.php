@@ -29,6 +29,10 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     <a href="../vistas/publicar.php">
         <div class="rectanguloProyect"></div>
     </a>
+    <!-- Rectangulo gris quejas -->
+    <a href="../vistas/quejarsestund.php">
+        <div class="rectanguloQuejas"></div>
+    </a>
 
     <!-- Icono usuario -->
     <div class="usuarioIcon">
@@ -48,6 +52,12 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     <div class="proyecText">
         <a href="../vistas/publicar.php">
             <h1>publicar nuevo proyecto</h1>
+        </a>
+    </div>
+    <!-- Texto Quejas -->
+    <div class="quejasText">
+        <a href="../vistas/quejarsestund.php">
+            <h1>quejas</h1>
         </a>
     </div>
 
@@ -87,25 +97,12 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
             <iframe width="300" height="200" class="yt" src="<?php echo $mostrar['yt_publicacion'] ?>"></iframe>
             <label class="des"><?php echo $mostrar['descripcion_publicacion'] ?></label>
             <label class="fec"><?php echo $mostrar['fecha_publicacion'] ?></label>
-
-            <button class="boton" name="1star">
-                1
-            </button>
-            <button class="boton" name="2star">
-                2
-            </button>
-            <button class="boton" name="3star">
-                3
-            </button>
-            <button class="boton" name="4star">
-                4
-            </button>
-            <button class="boton" name="5star">
-                5
-            </button>
-            <label class="contact">
-                <a href="contacto.php">contactar</a>
-            </label>
+            <button class="boton" name="1star">1</button>
+            <button class="boton" name="2star">2</button>
+            <button class="boton" name="3star">3</button>
+            <button class="boton" name="4star">4</button>
+            <button class="boton" name="5star">5</button>
+            <label class="contact"><a href="contacto.php">contactar</a></label>
             <label class="califi">califica:</label>
             <input type="varchar" class="coment1" placeholder="Agrega tu comentario" name="comentariotxt">
             <input type="submit" class="coment2" value="comentar" name="coment">
@@ -115,7 +112,17 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     }
     ?>
 
-
+    <?php
+    $sqli = "SELECT * FROM comentario";
+    $result = mysqli_query($conex, $sqli);
+    while ($most = mysqli_fetch_array($result)) {
+    ?>
+        <div class="coments">
+            <p>User: <?php echo $most['texto_comentario'] ?></p>
+        </div>
+    <?php
+    }
+    ?>
 
     <?php
     include('../conexiones/comentarios.php');

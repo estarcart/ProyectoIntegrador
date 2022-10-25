@@ -2,7 +2,7 @@
 
 include("conexion.php");
 
-if (isset($_REQUEST['guardar'])){
+if (isset($_REQUEST['guardar1'])){
     
 
 
@@ -18,6 +18,3 @@ if (isset($_REQUEST['guardar'])){
         }
     }
 }
-
-
-?>

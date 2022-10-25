@@ -50,7 +50,18 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     <div class="mensjent">
         <h1>quejas entrantes</h1>
     </div>
+    <?php
+    $sql = "SELECT * FROM quejas";
+    $result = mysqli_query($conex, $sql);
+    while ($mostrar = mysqli_fetch_array($result)) {
+    ?>
 
+        <form class="mensojo" method="post">
+            <label class="menk"><?php echo $mostrar['mensaje_queja'] ?></label>
+        </form>
+    <?php
+    }
+    ?>
 
 </body>
 

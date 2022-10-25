@@ -61,9 +61,11 @@
 
             <input type="text" required placeholder="universidad" class="elg8" name="universidad" autocomplete=" off ">
 
-            <input type="varchar" required placeholder="semestre" class="elg9" name="semestre" autocomplete=" off ">
+            <input type="varchar" required placeholder="facultad y semestre" class="elg9" name="semestre" autocomplete=" off ">
 
             <input type="varchar" required placeholder="promedio" class="elg10" name="promedio" autocomplete=" off ">
+
+
 
             <input type="submit" class="Eregistrarse" name="Eregistrarse" value="registrarse">
             <!--al darle click lo registra en el sistema-->

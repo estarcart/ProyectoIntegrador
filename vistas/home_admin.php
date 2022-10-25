@@ -26,9 +26,25 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     <!-- Rectangulo amarillo usuario -->
     <div class="rectanguloUser"></div>
     <!-- Rectangulo rojo gestionar iniciativas -->
-    <a href="../../phpmyadmin/index.php">
+    <a href="../../phpmyadmin/index.php?route=/database/structure&db=pontilaunch">
         <div class="rectanguloGest"></div>
     </a>
+    <!-- Rectangulo gris administrar usuarios -->
+    <a href="../vistas/cord_adminusuarios.php">
+        <div class="rectanguloadmuser"></div>
+    </a>
+    <!--Texto administrar usuarios-->
+    <div class="adminuser">
+        <a href="../vistas/cord_adminusuarios.php">
+            <h1>administrar usuarios</h1>
+        </a>
+    </div>
+    <!-- Icono administrar usuario-->
+    <div class="admuserIcon">
+        <a href="../vistas/cord_adminusuarios.php">
+            <img src="../imagenes/admusuarios.png" href="../vistas/cord_adminusuarios.php">
+        </a>
+    </div>
 
     <!-- Icono usuario -->
     <div class="usuarioIcon">
@@ -40,7 +56,7 @@ $conex = mysqli_connect("localhost", "root", "", "pontilaunch");
     </div>
     <!-- Texto Gestionar -->
     <div class="proyectGest">
-        <a href="../../phpmyadmin/index.php">
+        <a href="../../phpmyadmin/index.php?route=/database/structure&db=pontilaunch">
             <h1>ingresar a la base de datos</h1>
         </a>
     </div>
